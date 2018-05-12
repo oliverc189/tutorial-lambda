@@ -7,7 +7,7 @@ node {
         	checkout scm
         }
         stage ('Build') {
-        	sh "./gradlew bootJar"
+        	sh ./gradlew bootJar
         }
         stage ('Tests') {
 	        parallel 'static': {
