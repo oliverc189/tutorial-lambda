@@ -7,7 +7,7 @@ node {
         	checkout scm
         }
         stage ('Build') {
-        	sh "echo 'shell scripts to build project...'"
+        	sh ./gradlew bootJar
         }
         stage ('Tests') {
 	        parallel 'static': {
