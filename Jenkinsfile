@@ -1,7 +1,6 @@
-
-node{
+pipeline{
     stage('CheckOut') {
-        git clone $(env.GIT_UTL)
+        checkout scm
     }
 
     stage('Build') {
