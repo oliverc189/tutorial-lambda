@@ -14,7 +14,7 @@ node {
 	            sh "echo 'shell scripts to run static tests...'"
 	        },
 	        'unit': {
-	            sh ./gradlew test
+	            sh "./gradlew test"
 	        },
 	        'integration': {
 	            sh "echo 'shell scripts to run integration tests...'"
