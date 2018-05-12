@@ -15,9 +15,6 @@ node {
             },
             'unit': {
                 sh ./gradlew test
-            },
-            'integration': {
-                sh "echo 'shell scripts to run integration tests...'"
             }
         }
         stage ('Deploy') {
