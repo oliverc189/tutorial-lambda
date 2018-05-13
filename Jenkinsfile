@@ -7,6 +7,7 @@ node {
         	checkout scm
         }
         stage ('Build') {
+            chmod +x ./gradlew
         	sh ./gradlew bootJar
         }
         stage ('Tests') {
